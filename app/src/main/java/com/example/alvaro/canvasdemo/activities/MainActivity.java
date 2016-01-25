@@ -19,7 +19,26 @@ public class MainActivity extends AppCompatActivity {
         btnSnow.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(),SnowActivity.class);
+                Intent intent = new Intent(getApplicationContext(), SnowActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+        Button btnCurve = (Button)findViewById(R.id.btnCurve);
+        btnCurve.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),CurveActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        Button btnFull = (Button)findViewById(R.id.btnFull);
+        btnFull.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(),FullActivity.class);
                 startActivity(intent);
             }
         });

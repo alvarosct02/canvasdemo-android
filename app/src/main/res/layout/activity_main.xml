@@ -17,4 +17,17 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:text="Snow Demo" />
+
+    <Button
+        android:id="@+id/btnCurve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Curve Demo" />
+    <Button
+        android:id="@+id/btnFull"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Curve Demo" />
 </LinearLayout>

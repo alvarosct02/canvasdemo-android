@@ -28,8 +28,8 @@ public class Viewport {
 
         pixelsPerMetre = screenXResolution / 18;
 
-        metresToShowX = 20;
-        metresToShowY = 34;
+        metresToShowX = 18;
+        metresToShowY = 32;
 
         convertedRect = new Rect();
         currentWorldCentre = new Point3D();

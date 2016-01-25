@@ -13,12 +13,10 @@ import java.util.Random;
  */
 public class SnowView extends BaseView {
 
-    Random random;
+    Random random = new Random();
 
     public SnowView(Context context, int screenWidth, int screenHeight) {
         super(context, screenWidth, screenHeight);
-
-        random = new Random();
 
         for(int i = 0; i < 200; i++){
             float x = random.nextFloat()* vp.getMetresToShowX();
@@ -38,8 +36,8 @@ public class SnowView extends BaseView {
     @Override
     public void draw() {
 
-        paint.setColor(Color.argb(255, 50, 205, 205));
-        canvas.drawColor(Color.argb(255, 50, 205, 205));
+        paint.setColor(Color.argb(255, 0, 64, 255));
+        canvas.drawColor(Color.argb(255, 0, 64, 255));
 
         for (BaseObject obj : objects) {
             obj.draw(vp,canvas,paint);

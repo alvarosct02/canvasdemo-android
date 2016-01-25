@@ -1,15 +1,15 @@
 package com.example.alvaro.canvasdemo.activities;
 
 import android.graphics.Point;
-import android.os.PersistableBundle;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Display;
 
 import com.example.alvaro.canvasdemo.views.BaseView;
+import com.example.alvaro.canvasdemo.views.FullView;
 import com.example.alvaro.canvasdemo.views.SnowView;
 
-public class SnowActivity extends AppCompatActivity {
+public class FullActivity extends AppCompatActivity {
 
     BaseView view = null;
 
@@ -25,7 +25,7 @@ public class SnowActivity extends AppCompatActivity {
         display.getSize(resolution);
 
         // And finally set the view for our game
-        view = new SnowView(this, resolution.x, resolution.y);
+        view = new FullView(this, resolution.x, resolution.y);
 
         // Make our platformView the view for the Activity
         setContentView(view);
